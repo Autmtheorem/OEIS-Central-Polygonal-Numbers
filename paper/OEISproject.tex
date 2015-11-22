@@ -3,6 +3,7 @@
 \usepackage{amsmath}
 \usepackage{caption}
 \usepackage{graphicx}
+\usepackage{enumerate}
 \title{Lazy Caterer's Sequence}
 \author{William Peters, Gihan Mendis}
 
@@ -38,6 +39,35 @@
   \end{enumerate}
 \end{enumerate}
 
+\subsection{Binary Words}
+When $n > 3$  the sequence gives the number of binary words where there are at least two ones and at most two two's. In these formulas $n$ represents the length of a binary word, so $a(n)$ gives the number of possible binary words formed with these constraints. The following are two illustrations of this structure. The first is when $n = 4$ and the second is when $n = 5$.
+
+\begin{enumerate}
+	\item $n = 4$\\
+	\begin{enumerate}
+		\item Binary words structure illustration\\
+		\[
+		\boxed{
+		\begin{gathered}
+		0011, 0101, 0110, 0111, 1001, 1010, 1011, 1100, 1101, 1110, 1111
+		\end{gathered}
+		}
+		\]
+	\end{enumerate}
+	
+	\item $n = 5$\\
+	\begin{enumerate}
+		\item Binary words structure illustration\\
+		\[
+		\boxed{
+		\begin{gathered}
+		11111, 01111, 10111, 11011, 11101, 11110, 00111, 10011, 10101, 10110,\\ 		        01011, 01101, 01110, 11100, 11001, 11010 
+		\end{gathered}
+		}
+		\]
+	\end{enumerate}
+\end{enumerate}
+ 
 \section{Formula Demonstrations}
 \subsection{Binomial}
 \begin{enumerate}
