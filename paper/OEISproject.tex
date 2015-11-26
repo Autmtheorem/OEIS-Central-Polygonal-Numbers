@@ -206,4 +206,56 @@ When $n > 3$  the sequence gives the number of binary words where there are at l
 
 \end{enumerate}
 
+\section{Experimental Bijection}
+
+We attempt to define a rule that map maximum set of pancake pieces we can get from n cuts to set of $n$ wordlenght binary words where there are at least two ones and at most two two's. (When  $n > 3$) : \\
+\\
+We label each pancake cut from "1" to "n" and the original boundary of pancake as "0". Then we consider the boundaries of each piece in alphabetize order as an unique representation of each piece. We attempt to find the bijection of this representation of pancake structure to other binary word structure.\\
+\\
+Our attempt was illustrated below for when $n=4$.    	    
+\\	
+\subsection{Demonstration when $n=4$.}
+\begin{figure}[h!]
+			\includegraphics[scale=0.5]{graphics/pancakecut11_bijec}
+			\captionsetup{labelformat=empty}
+			\caption{}
+			\label{fig:pancakecut11}
+\end{figure}
+
+By labeling the maximum set of pieces with there boundaries and alphabetize ordering we get the set as follows:\\
+\\
+${012,0123,01234,0124,0134,014,023,0234,1234,134,234}$ \\
+\\
+Ordered set of binary number structure is as follows:\\
+\\
+${0011, 0101, 0110, 0111, 1001, 1010, 1011, 1100, 1101, 1110, 1111}$\\
+\\
+Bijection we can observe is
+%
+%Can you write this one I am not really sure what you mean.
+%
+
+\section{Experimental Superstructure}
+
+As mentioned in the experimental bijection section the set from the pancake structure can be organize labeling each piece with there boundaries and alphabetize ordering them.Then the superstructure for $n=4$ and $n=5$ are given as bellow. 
+
+\begin{enumerate}
+		\item $n=4$\\
+		\[
+		\boxed{
+		\begin{gathered}
+	{012,0123,01234,0124,0134,014,023,0234,1234,134,234} \\
+		\end{gathered}
+		}
+		\]
+		\item $n=5$\\
+		\[
+		\boxed{
+		\begin{gathered}
+		{012,0123,0124,01345,0145,0234,02345,025,034,045,12345,1235,135,145,234,235}
+		\end{gathered}
+		}
+		\]
+\end{enumerate}
+
 \end{document}
