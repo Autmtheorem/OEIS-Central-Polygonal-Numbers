@@ -12,6 +12,45 @@
 
 \maketitle
 
+\section{Outline}
+\begin{enumerate}
+	\item Sequence number: A000124
+	\item First ten digits in the sequence: 1, 2, 4, 7, 11, 16, 22, 29, 37, 46 
+	\item Two interpretations we plan to show
+	\begin{enumerate}
+		\item The maximal number of pieces formed when cutting a pancake with N cuts. When N=0 there can be only one piece. When N = 1 there can only be a maximum of two pieces. When N = 2 there can only be a maximum of four pieces found.  pieces. When N = 3 there can only be a maximum of seven pieces and so on.
+		\item For n\textgreater3, a(n) is the number of length n binary words that have at least two 1's and at most two 0's. a(4) = 11 because we have: 0011, 0101, 0110, 0111, 1001, 1010, 1011, 1100, 1101, 1110, 1111.	
+	\end{enumerate}
+	\item Four formulas
+	\begin{enumerate}
+		\item $a(n) = Binomial(n+2,1)-2 * binomial(n+1,1)+binomial(n+2,2)$
+		\item $G.f : A(x) = (1-x+x^2)/(1-x)^3$
+		\item $E.g.f:  exp(x)*(1+x+(x^2)/2)$
+		\item $a(n+3) = 3 * a(n+2)-3 * (n+1)+a(n) and a(1) = 1, a(2) = 2, a(3) = 4$
+	\end{enumerate}
+	\item Team Work Plan
+	\begin{enumerate}
+		\item Demonstrations of the structures
+		\begin{enumerate}
+			\item Pancake structure - Gihan
+			\item Smallest number of edges to guarantee connectivity(binary word) - William
+		\end{enumerate}
+		\item Four demonstrations
+		\begin{enumerate}
+			\item Binomial - Gihan
+			\item Recursive - William
+			\item G.f - Gihan
+			\item E.g.f - William
+		\end{enumerate}
+		\item Experiment bijection - William and Gihan
+		\item Experimental Superstructure - William and Gihan
+		\item Open question - Willian and Gihan 
+	\end{enumerate}
+\end{enumerate}
+
+\newpage
+
+
 \section{Illustration of structures}
 
 \subsection{Pancake Structure}
